@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted } from 'vue';
-import HelloWorld from '../components/HelloWorld.vue';
+import HelloWorld from '/com/HelloWorld.vue';
 export default defineComponent({
   name: 'home',
   components: {
@@ -29,6 +29,10 @@ export default defineComponent({
   },
   mounted() {
     console.log('mounted');
+    fetch('/api/wyu/comment/music?id=186016&limit=1').then(response=>response.json()).then((res)=>{
+      console.log('res',res);
+      
+    })  
   },
 
   computed: {},

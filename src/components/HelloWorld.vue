@@ -1,14 +1,5 @@
 <template>
-  <h1>{{ title }}{{name}}</h1>
-  <!-- <h1>{{ msg }}</h1> -->
-  <!-- <button @click="count++">count is: {{ count }}</button>
-  <p>Edit <code>components/HelloWorld.vue</code> ok</p>
-  <span v-bind:title="msg">12{{ msg }}{{ inputVaue }}</span>
-  <br />
-  <input type="text" @value="inputVaue" />
-  <input type="text" v-model="inputVaue" />
-  <p :style="{fontSize:count+'px'}" class = 'log-input' :class="{ active: count > 5 }"> <span class="text">span text </span> {{ logInput }}</p>
-  <p v-show="count>5">大于5{{count}}</p> -->
+  <h1>{{ title }}{{name}}hello world</h1>
 </template>
 
 <script lang='ts'>
