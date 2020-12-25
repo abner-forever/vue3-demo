@@ -5,7 +5,7 @@
         <b>🚀 [vue3, vuex, router, ts]</b>
       </div>
       <div>
-        <router-link to="/">(🍉 🍉🌽🍌💩 ) => Home</router-link>
+        <router-link to="/">(🍉 🍉🌽🍌💩 ) => Home-1</router-link>
       </div>
       <div>
         <router-link to="/mine">(🌽 ) => MIne</router-link>
