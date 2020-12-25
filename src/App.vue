@@ -3,9 +3,10 @@
     <div id="nav">
       <div>
         <b>🚀 [vue3, vuex, router, ts]</b>
+        <p>test package</p>
       </div>
       <div>
-        <router-link to="/">(🍉 🍉🌽🍌💩 ) => Home-2</router-link>
+        <router-link to="/">(🍉 🍉🌽🍌💩 ) => Home</router-link>
       </div>
       <div>
         <router-link to="/mine">(🌽 ) => MIne</router-link>
