@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ title }}{{name}}hello world</h1>
+  <h1>{{ title }}{{name}}</h1>
 </template>
 
 <script lang='ts'>
@@ -8,7 +8,7 @@ import { defineComponent, onMounted } from 'vue';
 
 export default defineComponent({
   name: 'HelloWorld',
-  props: ['title','name'],
+  props: ['title', 'name'],
   data(props) {
     console.log('props', this);
 

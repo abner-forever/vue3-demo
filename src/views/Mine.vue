@@ -1,48 +1,50 @@
 <template>
   <div>mine{{ count }}</div>
-  <div @click="gohome">click</div>
+  <!-- <div @click="gohome">click</div> -->
   <div @click="clickHome" data-attr='a'>click home</div>
+  <hello-world title="hello world" name='mine' />
 </template>
 
 <script>
-import { useRouter, useRoute } from "vue-router";
+import { useRouter, useRoute } from 'vue-router';
+import HelloWorld from '/com/HelloWorld.vue';
 export default {
   setup() {
     const route = useRoute();
     const router = useRouter();
-    const gohome = (params) => {
-        console.log(1);
-        router.push({
-            path:'/',
-            query:params
-        })
+    const gohome = (e, params) => {
+      router.push({
+        path: '/',
+        query: params,
+      });
     };
     return {
-        gohome
+      gohome,
     };
   },
-  name: "HelloWorld",
+  components: {
+    HelloWorld,
+  },
+  name: 'mine',
   props: {
     msg: String,
   },
   data() {
     return {
       count: 0,
-      inputVaue: "",
+      inputVaue: '',
     };
   },
 
-  mounted() {
-    
-  },
+  mounted() {},
   methods: {
-     clickHome(){
-        let params = {
-            a:'1',
-            b:2121
-        }
-        this.gohome(params)
-      }
+    clickHome() {
+      let params = {
+        a: '1',
+        b: 2121,
+      };
+      this.gohome('', params);
+    },
   },
   computed: {},
   watch: {},

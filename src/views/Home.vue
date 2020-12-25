@@ -1,6 +1,6 @@
 <template>
   <div>Home{{ count }}</div>
-  <hello-world title="lallalalal" name='12' >
+  <hello-world title="hello world" name='home' >
   </hello-world>
 </template>
 
